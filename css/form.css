@@ -1,0 +1,360 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+#page-header {
+  background: #033048;
+  padding: 25px 0;
+  overflow: hidden;
+}
+#page-header .logo {
+  color: #fff;
+  float: left;
+}
+
+#page-header nav {
+  float: right;
+  margin-top: 15px;
+}
+#page-header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+}
+#page-header nav ul li a {
+  color: #f9e42e;
+}
+
+.line{
+  width: 3em;
+  height: .3em;
+  background: yellow;
+  border-radius: 1em;
+  margin-top: .25em;
+}
+.line:first-child{
+  margin-top:.7em;
+}
+
+
+.hamburger {
+  display:none;
+}
+
+
+
+/*
+insert form css here
+*/
+
+form {
+	margin: 30px 90px;
+}
+
+form text {
+	display: block;
+	margin: 10px 0;
+}
+
+form label {
+	
+	width: 150px;
+	display: inline-block;
+	padding: 12px 10px 10px 0;
+}
+
+form label, #service, #checkbox {
+	font-size: 0.9rem;
+}
+
+.text-input, .password {
+	width: 300px;
+	font-size: 0.9rem;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: a8a8a7;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid black;
+}
+
+select {
+	width: 300px;
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid black;
+	font-size: 0.9rem;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+#register-button {
+	margin: 30px 0 60px;
+
+}
+input[type=submit] {
+	color: white;
+	background: #033048;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 40px;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+input[type="radio"] {
+	margin-right: 10px;
+
+}
+
+.radio-btn-txt {
+	padding-right: 25px;
+}
+
+#checkbox {
+	margin-top: 12px;
+}
+
+/*
+end of form css here
+*/
+
+
+
+#bottom-cta {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #121212;
+  padding: 65px 0 45px;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 68px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 75px;
+}
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* 1000px breakpoint */
+
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+
+  .container {
+    width: 750px;
+    margin: 0 auto;
+
+  }
+
+}
+
+
+/* 768px breakpoint */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  
+  body {
+    width: 100%;
+    font-size: 20px;
+  }
+  .container {
+  width: 100%;
+  margin: 0 auto;
+  }
+  .logo {
+  font-size: 40px;
+  font-weight: 800;
+  padding-left: 20px;
+  }
+
+  .hamburger {
+    display:inline-block;
+    float:right;
+    cursor:pointer;
+    margin-right: 20px;
+  }
+  nav{
+    width:100%;
+  }
+  #page-header h1{
+    padding-bottom:20px;
+  }
+  #page-header nav li{
+    float: none;
+  }
+  .menu{
+    display:none;
+    height:0;
+    transition: height 1s;
+  }
+  .menu.open{
+    display:block;
+    height: 8em;
+  }
+
+  #page-header nav ul li {
+    display: list-item;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  input[type="radio"] {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+  }
+
+
+}
+
+  footer {
+    padding: 25px 0 15px;
+  }
+  footer .logo {
+    margin-bottom: 30px;
+  }
+  footer ul li {
+    margin: 0 26px 40px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+
+}
+
+/* 480px breakpoint */
+
+@media screen and (max-width: 480px) {
+
+ .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .logo{
+    font-size: 40px;
+    font-weight: 800;
+    padding-left: 5px;
+  }
+  .line{
+    width: 2em;
+    height: .3em;
+    background: yellow;
+    border-radius: 1em;
+    margin-top: .15em;
+  }
+  .line:first-child{
+    margin-top:.4em;
+  }
+
+  .hamburger{
+    display:inline-block;
+    float:right;
+    cursor:pointer;
+    margin-right: 5px;
+  }
+
+  .menu{
+    display:none;
+    height:0;
+    transition: height 1s;
+  }
+  .menu.open{
+    display:block;
+    height: 6em;
+  }
+
+  #page-header nav ul li {
+    width: 300px;
+    display: list-item;
+    text-align: center;
+    font-size: 24px;
+  }
+
+
+  
+}

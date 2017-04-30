@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+
+		<title>Relaxr Form Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/form.css">
+
+	</head>
+	<body>
+		<header id="page-header">
+			<div class="container">
+				<h1 class="logo">Relaxr</h1>
+			
+				<div class="hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+				<nav>	
+					<ul class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="blog.html">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+	<form>
+
+		<text>Register Now! </text>
+
+		<div id="name">
+			<label for="name">Name:</label>
+	 		<input class="text-input" type="text" placeholder="John Doe" />
+	 	</div>
+		<div id="email">
+			<label for="email">Email:</label>
+	 		<input class="text-input" type="email" placeholder="hello@gmail.com" />
+		</div>
+		<div id="phone">
+		 	<label for="phone">Phone:</label>
+		 	<input class="text-input" type="number" placeholder="0412-833-567" />
+		</div>
+		<div id="state">
+	 	<label for="state">State:</label>
+	 	<select name="state">
+			<option value="vic" selected>Vic</option>
+			<option value="nsw">NSW</option>
+			<option value="qld">Qld</option>
+			<option value="sa">SA</option>
+			<option value="act">ACT</option>
+			<option value="tas">Tas</option>
+		</select>
+		</div>
+		<div id="password">
+			<label for="password">Password:</label>
+		 	<input class="password" type="password" name="signInPassword" required>
+		</div>
+	 	<div id="service">
+		 	<label for="service">Which service are you interested in?</label>
+			 	<input type="radio" name="service" value="relaxing"><span class="radio-btn-txt">Relaxing </span>
+			 	<input type="radio" name="service" value="emailRadio"><span class="radio-btn-txt"> Email </span>
+			 	<input type="radio" name="service" value="phoneRadio"><span class="radio-btn-txt">Phone </span>
+		</div>
+	 	<div id="checkbox">
+	 		<input type="checkbox" name="agree" value="agree"> I agree to the terms 
+	 	</div>
+
+	 	<div id="register-button">
+	 	 	<input type="submit" value="Register Now!">
+	 	 </div>
+	</form>	
+
+
+	<footer>
+			<h4 class="logo">Relaxr</h4>
+
+			<ul>
+				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
+				<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+			</ul>
+
+			<p class="copyright">Copyright 2015. Relaxr.</p>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+		</script>
+		<script src="js/form.js"></script>
+	</body>
+</html>
